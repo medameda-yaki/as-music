@@ -1,0 +1,512 @@
+* {
+  margin: unset;
+  padding: unset;
+}
+
+.pc-only {
+  display: block;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: #575757;
+}
+
+p {
+  color: #575757;
+  line-height: 2.3rem;
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+.ff-Blackadder {
+  font-family: "Butterfly Kids", cursive;
+  font-style: normal;
+  letter-spacing: 0.5rem;
+}
+
+section {
+  padding-top: 10rem;
+}
+
+/* ヘッダー */
+header {
+  background-color: #fff;
+  position: fixed;
+  z-index: 999;
+  width: 100%;
+}
+
+.nav__wrap {
+  width: 100%;
+  margin: 0 auto;
+}
+
+.nav__lists {
+  display: flex;
+  justify-content: space-between;
+}
+
+.nav__list {
+  width: 100%;
+  height: 60px;
+  background-color: #ffffff;
+  position: relative;
+  transition: all 0.3s;
+}
+
+.nav__list:hover {
+  background-color: #ffcf77;
+}
+
+.nav__list:not(:first-child)::before {
+  content: "";
+  width: 1px;
+  height: 100%;
+  background-color: #fff;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: all 0.3s;
+}
+
+/* .nav__list:hover::before {
+    background-color: #5e5e5e;
+} */
+.nav__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100%;
+  text-decoration: none;
+  color: #575757;
+  font-size: 1.6rem;
+  letter-spacing: 0.3em;
+  transition: all 0.3s;
+  font-weight: 600;
+}
+
+.nav__list:hover a {
+  color: #fff;
+}
+
+/* ドロップダウンメニュー */
+
+.dropdown__lists {
+  display: none;
+  /*デフォルトでは非表示の状態にしておく*/
+  width: 100%;
+  position: absolute;
+  top: 60px;
+  left: 0;
+}
+
+.nav__list:hover .dropdown__lists {
+  display: block;
+  /*Gナビメニューにホバーしたら表示*/
+}
+
+.dropdown__list {
+  background-color: #d8d8d8;
+  height: 60px;
+  transition: all 0.3s;
+  position: relative;
+}
+
+.dropdown__list:not(:first-child)::before {
+  content: "";
+  width: 100%;
+  height: 1px;
+  background-color: #ffffff;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+.dropdown__list-1:hover {
+  background-color: #9dffff;
+}
+.dropdown__list-2:hover {
+  background-color: #ea96ff;
+}
+.dropdown__list-3:hover {
+  background-color: #ff5353;
+}
+
+.dropdown__list a {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: #fff;
+  text-decoration: none;
+  position: relative;
+}
+
+.dropdown__list a::before {
+  content: "";
+  display: block;
+  width: 6px;
+  height: 6px;
+  border-top: 2px solid #fff;
+  border-left: 2px solid #fff;
+  transform: rotate(135deg);
+  position: absolute;
+  right: 15px;
+  top: calc(50% - 5px);
+}
+
+/* ヒーローイメージ */
+
+.hero-img {
+  background-image: url(../img/MV-pc.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 95vh;
+}
+
+h1 {
+  font-size: 4.8rem;
+  color: #fff;
+  width: 40%;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 14rem;
+}
+
+/* コンセプト */
+
+h2 {
+  font-size: 5rem;
+  width: 50%;
+  font-weight: 700;
+}
+
+.h2-concept {
+  color: #e7cd7f;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.concept-p {
+  text-align: center;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 3rem;
+}
+
+/* スライダー */
+.slider {
+  margin-top: 12rem;
+  margin-bottom: 10rem;
+}
+
+/* ドレスタイプ */
+.dresstype {
+  background-color: #eae0c3;
+  padding-bottom: 10rem;
+  position: relative;
+}
+
+.h2-dresstype {
+  position: absolute;
+  color: #ff9fe1;
+  top: -2.5%;
+  left: 10.5rem;
+}
+
+.flex-type {
+  display: flex;
+  align-items: center;
+}
+
+.flex-type img {
+  flex: 1;
+  width: 50%;
+}
+
+.flex-type a {
+  flex: 1;
+  font-size: 3rem;
+  font-weight: 600;
+  text-align: center;
+}
+
+.a-border {
+  position: relative;
+}
+
+.border {
+  padding-bottom: 5px;
+  position: relative; /*::afterにabsoluteをかけるので設定*/
+}
+.border::after {
+  content: ""; /* コンテンツを追加 */
+  width: 60%; /* 線の幅 */
+  height: 2px; /* 線の高さ */
+  position: absolute; /* position: relative;からの線の絶対位置 */
+  bottom: 0; /* 線の位置 */
+  left: 18%; /* 線の位置 */
+  transform: scale(0, 1); /* 線のx軸の長さを0 */
+  transition: 0.5s; /* 要素の変形する時間*/
+  transform-origin: left top; /* 要素の座標の原点を設定*/
+}
+
+.a-white::after {
+  background-color: #9dffff;
+}
+
+.a-pink::after {
+  background-color: #ea96ff;
+}
+
+.a-red::after {
+  background-color: #ff5353;
+}
+
+/* 追記 */
+.border:hover::after {
+  transform: scale(1, 1); /* 線のx軸の長さを1 */
+}
+
+.border:hover {
+  opacity: 0.7;
+}
+
+/* フォトウェディング */
+
+.h2-photo {
+  color: #e7cd7f;
+  margin-bottom: 6rem;
+}
+
+.photo p {
+  width: 60%;
+  margin: 0 auto;
+  text-align: center;
+  margin-bottom: 5rem;
+}
+
+/*丸がボタンに変形する*/
+
+.btntransform {
+  /*丸の基点とするためrelativeを指定*/
+  position: relative;
+  /*ボタンの形状*/
+  display: block;
+  padding: 0 0 0 15px;
+  line-height: 50px;
+  color: #333;
+  text-decoration: none;
+  outline: none;
+  width: 20%;
+  margin: 0 auto;
+  font-size: 1.3rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+}
+
+/* 丸が動く */
+.btntransform::before {
+  content: "";
+  /*絶対配置で丸の位置を決める*/
+  position: absolute;
+  left: 0;
+  z-index: -1;
+  /*丸の形状*/
+  width: 50px;
+  height: 50px;
+  background: #ccc;
+  border-radius: 25px;
+  /*アニメーションの指定*/
+  transition: 0.3s ease-out;
+}
+
+/*hoverした際の形状*/
+.btntransform:hover::before {
+  width: 300px;
+}
+
+/* 矢印の形状 */
+.btntransform::after {
+  position: absolute;
+  content: "";
+  top: 1.3em;
+  right: -15px;
+  width: 5px;
+  height: 5px;
+  border-top: 1px solid #000;
+  border-right: 1px solid #000;
+  transform: rotate(45deg);
+}
+
+/* アクセス */
+.access {
+  background-color: #eae0c3;
+  padding-bottom: 10rem;
+  margin-top: -3rem;
+}
+
+.flex-access {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  margin-top: 3rem;
+}
+
+.access-title {
+  border-bottom: 1px solid #a13131;
+  margin-bottom: 1rem;
+}
+
+.access-detail {
+  text-indent: 1rem;
+}
+
+iframe {
+  width: 400px;
+  height: 300px;
+}
+
+/* footer */
+
+footer {
+  background-color: #a13131;
+  text-align: center;
+  color: #fff;
+}
+
+/* スマホ */
+
+@media screen and (max-width: 540px) {
+  /* 全体 */
+  .inner {
+    width: 95%;
+  }
+
+  .pc-only {
+    display: none;
+  }
+
+  section {
+    padding-top: 5rem;
+  }
+
+  p {
+    font-size: 0.8rem;
+  }
+
+  /* ヘッダー */
+  .nav__list a {
+    font-size: 1rem;
+  }
+
+  /* ヒーローイメージ */
+  .hero-img {
+    height: 85vh;
+  }
+
+  h1 {
+    font-size: 3rem;
+    width: 90%;
+    text-shadow: 0 0 black;
+    padding-top: 17rem;
+    text-align: center;
+  }
+
+  /* コンセプト */
+  h2 {
+    font-size: 2.5rem;
+    width: 90%;
+    font-weight: 600;
+  }
+
+  .concept-p {
+    width: 90%;
+  }
+
+  /* スライダー */
+  .slider {
+    margin-top: 5rem;
+    margin-bottom: 7rem;
+  }
+
+  /* ドレスタイプ */
+
+  .dresstype {
+    padding-bottom: 6rem;
+  }
+
+  .h2-dresstype {
+    left: 1.5rem;
+  }
+
+  .flex-type a {
+    font-size: 1rem;
+    letter-spacing: 0.3rem;
+  }
+
+  /* フォトウェディング */
+
+  .h2-photo {
+    width: 90%;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 3rem;
+  }
+
+  .photo p {
+    width: 80%;
+    margin-bottom: 3rem;
+  }
+
+  .btntransform {
+    font-size: 1rem;
+    width: 90%;
+    padding: unset;
+    margin-bottom: 3rem;
+  }
+
+  .btntransform::before {
+    content: unset;
+  }
+
+  .btntransform::after {
+    content: unset;
+  }
+
+  /* アクセス */
+  .access {
+    margin-top: -0.5rem;
+    padding-bottom: 5rem;
+  }
+
+  .flex-access {
+    display: block;
+  }
+
+  iframe {
+    width: 100%;
+    height: 300px;
+  }
+
+  .map {
+    margin-top: 2rem;
+  }
+}
