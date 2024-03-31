@@ -1,0 +1,326 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>aoineko</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/slick.css">
+    <link rel="stylesheet" href="css/slick-theme.css">
+
+    <script src="js/jquery-3.7.1.min.js"></script>
+    <script src="js/slick.js"></script>
+    <script src="js/slick.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/main.js"></script>
+
+    <script>
+
+        var slider = new Swiper('#slider', {
+            nextButton: '.swiper-button-next',
+            prevButton: '.swiper-button-prev'
+        })
+        var thumbs = new Swiper('#thumbs', {
+            centeredSlides: true,
+            spaceBetween: 10,
+            slidesPerView: "auto",
+            touchRatio: 0.2,
+            slideToClickedSlide: true
+        });
+        slider.params.control = thumbs;
+        thumbs.params.control = slider;
+
+    </script>
+
+
+</head>
+
+
+
+<body>
+
+    <!-- ヘッダー (PC)-->
+    <div class="all-flex">
+        <header class="pc-only">
+            <aside>
+                <div class="side-header">
+                    <div class="logo-div">
+                        <a href="aoineko.html" class="logo-a"><img src="img/rogo.jpg" alt="ロゴ" class="logo-img"></a>
+                    </div>
+
+                    <ul class="header-menu-ul">
+                        <li class="header-menu-li"><a href="about.html" class="header-menu-a">ABOUT US</a></li>
+
+                        <li class="header-menu-li"><a href="" class="header-menu-a">VIDEO</a></li>
+
+                        <li class="header-menu-li"><a href="" class="header-menu-a">NEWS</a></li>
+
+                        <li class="header-menu-li"><a href="" class="header-menu-a">CONTACT</a></li>
+                    </ul>
+
+                    <ul class="header-sns-ul">
+                        <li class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img
+                                    src="img/youtube-logo.png" alt="youtube" class="header-sns-img"></a></li>
+
+                        <li class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img
+                                    src="img/X-logo.png" alt="X" class="header-sns-img"></a></li>
+
+                        <li class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img
+                                    src="img/TikTok-logo.png" alt="tiktok" class="header-sns-img"></a></li>
+
+                        <li class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img
+                                    src="img/instagram-logo.png" alt="instagram" class="header-sns-img"></a></li>
+                    </ul>
+                </div>
+            </aside>
+        </header>
+
+        <header class="header sp-only">
+            <div class="navtext-container">
+                <div class="navtext"><a href="aoineko.html">band name</a></div>
+            </div>
+            <input type="checkbox" class="menu-btn" id="menu-btn">
+            <label for="menu-btn" class="menu-icon"><span class="navicon"></span></label>
+            <ul class="menu">
+                <li class="top"><a href="about.html">ABOUT US</a></li>
+                <li><a href="">VIDEO</a></li>
+                <li><a href="">NEWS</a></li>
+                <li><a href="">CONTACT</a></li>
+                <li class="header-flex-sp">
+                <div class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img
+                            src="img/youtube-logo.png" alt="youtube" class="header-sns-img"></a></div>
+
+                <div class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img src="img/X-logo.png"
+                            alt="X" class="header-sns-img"></a></div>
+
+                <div class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img src="img/TikTok-logo.png"
+                            alt="tiktok" class="header-sns-img"></a></div>
+
+                <div class="header-sns-li"><a href="" target="_blank" class="header-sns-a"><img
+                            src="img/instagram-logo.png" alt="instagram" class="header-sns-img"></a></div>
+    </li>
+    </ul>
+
+
+    </header>
+
+    <!-- ヘッダーここまで -->
+
+
+    <div class="main-view">
+        <div class="bg">
+
+            <main>
+                <div class="hero">
+                    <div class="hero-img-sub inner">
+                        <img src="img/heroimg-pc.jpg" alt="MV" class="hero-img pc-only">
+                        <img src="img/hero-sp.jpg" alt="MV" class="hero-img sp-only">
+                        <h1>band name</h1>
+                    </div>
+                </div>
+
+                <div class="bgc">
+                    <div class="group-scroll">
+                        <div class="scrolldown2"><span>Scroll</span></div>
+                        <div class="scrolldown3"><span></span></div>
+                        <div class="scrolldown4"><span></span></div>
+                        <div class="scrolldown5"><span></span></div>
+                    </div>
+
+                    <!-- ABOUT US -->
+                    <div class="about inner">
+                        <div class="about-text1">
+                            <p>テキストテキストテキスト<br>テキストテキストテキストテキストテキス<br>テキストテキストテキストテキストテキス</p>
+                        </div>
+                        <h2 class="about-h2">キャッチコピー</h2>
+                        <div class="about-text2">
+                            <p>テキストテキストテキスト<br>テキストテキストテキストテキストテキス<br>テキストテキストテキストテキスト<br>テキステキストテキストテキスト</p>
+                        </div>
+                        <a href="#about" class="about-a">
+                            <div class="about-more">
+                                <div class="btnripple2"><span></span></div>
+                                <div class="about-member">
+                                    <p>Member</p>
+                                </div>
+
+                            </div>
+                        </a>
+                    </div>
+
+
+                    <!-- VIDEO -->
+                    <div class="video">
+                        <h3 class="inner">VIDEO</h3>
+                        <div class="section">
+
+
+
+                            <!-- <div class="sliderArea pc-only">
+                                <div class="full-screen_one slider">
+                                    <div><iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/EpFxTXgElLA?si=qd7lZVMr5mlONH9d"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe></div>
+                                    <div><iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/-VKIqrvVOpo?si=wPLWlnyI4WleKjU6"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe></div>
+                                    <div><iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/iT318d30d2c?si=WxSRWBFxylcQmVQh"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe></div>
+                                    <div><iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/9ypEFXTakV8?si=WRwAoJZqOu3hLxkx"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe></div>
+                                    <div><iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/JJaCwW4HyVs?si=NorVA9sex73x7SFe"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe></div>
+                                    <div><iframe width="560" height="315"
+                                            src="https://www.youtube.com/embed/4MoRLTAJY_0?si=-zNxDDbUxv1MqVnt"
+                                            title="YouTube video player" frameborder="0"
+                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                            allowfullscreen></iframe></div>
+
+                                </div>
+                                <div class="inner video-btn1">
+                                    <a href="#" target="_blank" class="video-btn2">View More</a>
+                                    <div class="scrolldown1-video"><span></span></div>
+                                </div>
+    
+                            </div> -->
+
+
+
+                            <div class="slider-sp sp-only">
+                                <div class="slider-img ">
+                                    <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/EpFxTXgElLA?si=qd7lZVMr5mlONH9d"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                </div>
+                                <div class="slider-img">
+                                    <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/-VKIqrvVOpo?si=wPLWlnyI4WleKjU6"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                </div>
+                                <div class="slider-img">
+                                    <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/iT318d30d2c?si=WxSRWBFxylcQmVQh"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                </div>
+                                <div class="slider-img">
+                                    <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/9ypEFXTakV8?si=WRwAoJZqOu3hLxkx"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                </div>
+                                <div class="slider-img">
+                                    <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/JJaCwW4HyVs?si=NorVA9sex73x7SFe"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                </div>
+                                <div class="slider-img">
+                                    <iframe width="560" height="315"
+                                    src="https://www.youtube.com/embed/4MoRLTAJY_0?si=-zNxDDbUxv1MqVnt"
+                                    title="YouTube video player" frameborder="0"
+                                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+                                    allowfullscreen></iframe>
+                                </div>
+
+                              </div>
+                              <div class="inner video-btn1">
+                                <a href="#" target="_blank" class="video-btn2">View More</a>
+                                <div class="scrolldown1-video"><span></span></div>
+                            </div>
+
+
+
+
+                        </div>
+                    </div>
+
+                    <div class="space"></div>
+
+                    <!-- NEWS -->
+                    <div class="news inner">
+
+                        <h3 class="news-h3">NEWS</h3>
+
+                        <ul class="news-ul">
+                            <li class="news-li">
+                                <a href="#" target="_blank" class="news-a">
+                                    <p class="news-date">2024/2/25</p>
+                                    <span class="span-blue news-span">
+                                        <p class="news-category">all</p>
+                                    </span>
+                                    <p class="news-detail">テキストテキストテキストテキスト</p>
+                                </a>
+                            </li>
+                            <li class="news-li">
+                                <a href="#" target="_blank" class="news-a">
+                                    <p class="news-date">2024/2/18</p>
+                                    <span class="span-yellow news-span">
+                                        <p class="news-category">vocal</p>
+                                    </span>
+                                    <p class="news-detail">テキストテキストテキストテキストテキステキス</p>
+                                </a>
+                            </li>
+                            <li class="news-li">
+                                <a href="#" target="_blank" class="news-a">
+                                    <p class="news-date">2024/2/01</p>
+                                    <span class="span-blue news-span">
+                                        <p class="news-category">all</p>
+                                    </span>
+                                    <p class="news-detail">テキストテキストテキストテキスト</p>
+                                </a>
+                            </li>
+                            <li class="news-li">
+                                <a href="#" target="_blank" class="news-a">
+                                    <p class="news-date">2024/2/25</p>
+                                    <span class="span-green news-span">
+                                        <p class="news-category">guiter</p>
+                                    </span>
+                                    <p class="news-detail">テキストテキストテキストテキストテキストテキストテ</p>
+                                </a>
+                            </li>
+                        </ul>
+
+                        <div class="news-view">
+                            <a href="#" target="_blank" class="news-view-a">...View More</a>
+                        </div>
+
+                    </div>
+
+                </div>
+
+
+            </main>
+
+
+            <footer>
+                <small>band name</small>
+            </footer>
+        </div>
+
+    </div>
+    </div>
+
+</body>
+
+</html>

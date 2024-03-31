@@ -1,0 +1,477 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
+}
+
+body {
+  background-color: #93c1d9;
+}
+
+img {
+  width: 100%;
+}
+
+a {
+  text-decoration: none;
+  color: rgb(44, 44, 44);
+}
+
+a:hover {
+  opacity: 0.7;
+}
+
+.zindex-99 {
+  z-index: -999;
+  filter: drop-shadow(3px 3px 3px #4d4d4d);
+}
+
+/* idをいい位置に飛ばす(idを変更するだけ） */
+#ABOUT::before {
+  display: block;
+  height: 9em;
+  margin-top: 9em;
+  content: "";
+}
+
+#WORKS::before {
+  display: block;
+  height: 9em;
+  margin-top: 9em;
+  content: "";
+}
+
+li {
+  list-style: none;
+}
+
+.inner {
+  width: 80%;
+  margin: 0 auto;
+}
+
+section {
+  margin-bottom: 8rem;
+}
+
+main {
+  position: relative;
+}
+
+/* めだまやき */
+
+.medamayaki1 {
+  position: absolute;
+  top: 21.5%;
+  left: -10%;
+  width: 30%;
+  transform: rotate(-50deg);
+}
+
+.medamayaki2 {
+  position: absolute;
+  top: 43%;
+  left: 85%;
+  width: 8%;
+  transform: rotate(-110deg);
+}
+
+.medamayaki3 {
+  position: absolute;
+  top: 46%;
+  left: 70%;
+  width: 15%;
+  transform: rotate(-50deg);
+}
+
+.medamayaki4 {
+  position: absolute;
+  top: 50%;
+  left: -3%;
+  width: 30%;
+}
+
+/* ひよこ */
+.hiyoko1 {
+  position: absolute;
+  top: 26%;
+  left: 73%;
+  width: 11%;
+  transform: scale(-1, 1);
+}
+
+.hiyoko2 {
+  position: absolute;
+  top: 26%;
+  left: 77%;
+  width: 11%;
+  transform: scale(-1, 1);
+}
+
+.hiyoko3 {
+  position: absolute;
+  top: 26%;
+  left: 81%;
+  width: 11%;
+  transform: scale(-1, 1);
+}
+
+.hiyoko4 {
+  position: absolute;
+  top: 26%;
+  left: 85%;
+  width: 11%;
+  transform: scale(-1, 1);
+}
+
+.hiyoko5 {
+  position: absolute;
+  top: 26%;
+  left: 89%;
+  width: 11%;
+  transform: scale(-1, 1);
+}
+
+.hiyoko6 {
+  position: absolute;
+  top: 49%;
+  left: 8%;
+  width: 18%;
+  z-index: -9999;
+}
+
+/* ヘッダー */
+header {
+  width: 100%;
+  background-color: rgb(255, 255, 255);
+  position: absolute;
+  top: 90%;
+  padding: 2rem 0;
+  z-index: 999;
+  filter: drop-shadow(2px 2px 2px #4d4d4d);
+}
+
+.header-flex {
+  font-size: 2rem;
+  display: flex;
+  align-items: center;
+}
+
+.header-p {
+  flex: 1;
+}
+
+.header-p-a {
+  font-size: 2.5rem;
+  color: rgb(214, 0, 0);
+}
+
+.header-ul {
+  flex: 2;
+  display: flex;
+  justify-content: space-evenly;
+}
+
+/*JSを使いfixedクラスが付与された際の設定*/
+#header.head-fix {
+  position: fixed;
+  top: 0;
+}
+
+/* ヒーローイメージ */
+.hero {
+  background-image: url(../img/mv-pc.jpg);
+  background-position: center;
+  background-size: cover;
+  height: 90vh;
+}
+
+h1 {
+  font-size: 6rem;
+  width: 60%;
+  margin-left: auto;
+  margin-right: 0;
+  padding-top: 20rem;
+  text-align: right;
+}
+
+/* about me */
+.about {
+  margin-top: 16rem;
+}
+
+.about-figure {
+  width: 20%;
+}
+
+.about-img {
+  border-radius: 50%;
+}
+
+.about-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5rem;
+}
+
+.about-h2 {
+  font-size: 4.5rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.my-name {
+  font-size: 2.5rem;
+  margin-bottom: 1.5rem;
+}
+
+dt {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+}
+
+dd {
+  font-size: 1.7rem;
+  margin-bottom: 0.5rem;
+  text-indent: 1rem;
+}
+
+.span-dd {
+  font-size: 2rem;
+}
+
+.red {
+  color: rgb(214, 0, 0);
+}
+
+.blue {
+  color: rgb(3, 3, 204);
+}
+
+/* 作品 */
+
+.work {
+  margin-top: 16rem;
+}
+
+.work-site {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+
+.website {
+  width: 35%;
+  padding: 1rem 2rem 1rem;
+  background-color: rgb(255, 255, 255);
+  margin-top: 3rem;
+  margin-bottom: 3rem;
+  filter: drop-shadow(2px 2px 2px #4d4d4d);
+}
+
+.work-h2 {
+  font-size: 4.5rem;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+h3 {
+  font-size: 4rem;
+  margin-top: 3rem;
+}
+
+h4 {
+  font-size: 1.7rem;
+  margin-top: 0.5rem;
+}
+
+.work-banner {
+  margin-top: 3rem;
+}
+
+/*==================================================
+スライダーのためのcss
+===================================*/
+.slider {
+  /*横幅94%で左右に余白を持たせて中央寄せ*/
+  width: 94%;
+  margin: 0 auto;
+}
+
+.slider img {
+  width: 100%;
+  /*スライダー内の画像を横幅100%に*/
+  height: auto;
+  filter: drop-shadow(2px 2px 2px #4d4d4d);
+}
+
+/*slickのJSで書かれるタグ内、スライド左右の余白調整*/
+
+.slider .slick-slide {
+  margin: 0 10px;
+}
+
+/*矢印の設定*/
+
+/* ???? */
+
+.question-h2 {
+  margin-top: 8rem;
+  text-align: center;
+}
+
+.question-a {
+  font-size: 4rem;
+}
+
+/* フッター */
+footer {
+  background-color: rgb(255, 255, 255);
+  text-align: center;
+}
+
+small {
+  color: black;
+}
+
+/* スマホ */
+@media screen and (max-width: 540px) {
+  .inner {
+    width: 95%;
+  }
+
+  /* ヒーローイメージ */
+
+  .hero {
+    background-position: left;
+  }
+
+  h1 {
+    font-size: 3rem;
+    margin: 0 auto;
+    text-align: center;
+    width: 100%;
+  }
+
+  .header-p-a {
+    font-size: 1.4rem;
+  }
+
+  .header-flex {
+    font-size: 1.4rem;
+  }
+
+  /* わたし */
+  .about {
+    margin-top: 6rem;
+    margin-bottom: unset;
+  }
+
+  .about-flex {
+    display: block;
+    text-align: center;
+  }
+
+  .about-h2 {
+    font-size: 2.5rem;
+  }
+
+  .about-figure {
+    width: 50%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 2rem;
+  }
+
+  .my-name {
+    font-size: 1.5rem;
+  }
+
+  dt {
+    font-size: 1.3rem;
+    margin-top: 2rem;
+  }
+
+  dd {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+  }
+
+  .span-dd {
+    font-size: 1.2rem;
+  }
+
+  /* 作品 */
+  .work-h2 {
+    font-size: 2.5rem;
+  }
+
+  h3 {
+    font-size: 2rem;
+  }
+
+  .website {
+    width: 70%;
+  }
+
+  .work-banner {
+    width: 88%;
+    margin-left: auto;
+    margin-right: auto;
+  }
+
+  #ABOUT::before {
+    display: block;
+    height: 3em;
+    margin-top: 3em;
+    content: "";
+  }
+
+  #WORKS::before {
+    display: block;
+    height: 3em;
+    margin-top: 3em;
+    content: "";
+  }
+
+  /* 装飾画像 */
+  .medamayaki1 {
+    top: 19.5%;
+    left: -10%;
+    width: 38%;
+  }
+
+  /* ひよこ */
+  .hiyoko1 {
+    top: 27%;
+  }
+
+  .hiyoko2 {
+    top: 27%;
+  }
+
+  .hiyoko3 {
+    top: 27%;
+  }
+
+  .hiyoko4 {
+    top: 27%;
+  }
+
+  .hiyoko5 {
+    top: 27%;
+  }
+}
+
+/* iPad-macbook */
+@media screen and (min-width: 541px) and (max-width: 1300px) {
+}
