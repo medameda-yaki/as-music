@@ -992,7 +992,7 @@ iframe {
 
   .about-member {
     left: 25%;
-    top: 85%;
+    top: 89%;
     border-radius: 50px;
     height: 2.5rem;
     width: 12rem;
@@ -1007,14 +1007,14 @@ iframe {
   .btnripple2 {
   width: 15%;
   height: 5%;
-  left: 65%;
-  top: 84%;
+  left: 69%;
+  top: 88%;
   }
 
   /* スペース */
 
   .space {
-    height: 15vh;
+    height: 20vh;
   }
 
   /* video */
