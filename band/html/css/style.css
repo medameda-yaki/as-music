@@ -12,10 +12,16 @@
 
 a {
   text-decoration: none;
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 li {
   list-style: none;
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 img {
@@ -126,6 +132,9 @@ h1 {
   position: absolute;
   bottom: -2rem;
   right: -3rem;
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /* スクロール */
@@ -134,6 +143,9 @@ h1 {
   position: absolute;
   bottom: -38%;
   left: 4%;
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 /*Scrollテキストの描写*/
@@ -445,6 +457,9 @@ h1 {
   position: absolute;
   top: 28%;
   left: 45%;
+  font-family: "Yomogi", cursive;
+  font-weight: 400;
+  font-style: normal;
 }
 
 .about-text1 {
@@ -967,10 +982,10 @@ iframe {
 
   h1 {
     font-size: 1.5rem;
-    width: 65%;
+    width: 70%;
     padding: 0.5rem;
-    bottom: -1rem;
-    right: -0.5rem;
+    bottom: 2rem;
+    right: -1rem;
   }
 
   .about-h2 {
