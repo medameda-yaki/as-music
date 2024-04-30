@@ -1,0 +1,99 @@
+/* ヒーロー */
+
+.hero {
+    background-image: url(../img/hero-bg-pc-about.jpg);
+    background-size: cover;
+    background-position: center;
+    height: 90vh;
+}
+
+.hero-img-sub {
+    position: relative;
+    z-index: 111;
+    padding-top: 3rem;
+}
+
+.bg-about{
+    background-color: #8ec3de;
+}
+
+main{
+    padding-top: 8rem;
+    padding-bottom: 8rem;
+}
+
+h2{
+    margin-top: 3rem;
+    margin-bottom: 3rem;
+    font-family: "Yomogi", cursive;
+    font-weight: 600;
+    font-style: normal;
+    font-size: 2rem;
+}
+
+h3 {
+    font-family: "Yomogi", cursive;
+    font-weight: 500;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.5rem;
+    margin-bottom: 0.5rem;
+  }
+  
+  h4{
+    font-family: "Yomogi", cursive;
+    font-weight: 400;
+    font-style: normal;
+    text-align: center;
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  
+
+.about-text{
+    text-align: center;
+}
+
+
+.menber{
+    padding-top: 5rem;
+}
+
+.member-flex{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 5rem;
+    margin-top: 3rem;
+}
+
+.member-detail{
+    width: 200px;
+}
+
+.profile-img{
+    border-radius: 50%;
+}
+
+.member-SNS{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.member-SNS img{
+    width: 1.5rem;
+}
+
+/* スマホ */
+@media screen and (max-width: 540px) {
+
+
+    .hero {
+        height: 83vh;
+    }
+
+    .hero-img {
+        padding-top: 2rem;
+    }
+}
