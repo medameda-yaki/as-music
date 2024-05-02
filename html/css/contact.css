@@ -1,0 +1,51 @@
+.contact-gamail{
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-top: 5rem;
+    margin-bottom: 3rem;
+}
+
+
+.x-flex{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.contact-x-a{
+    display: block;
+    width: 40%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+    background-color: rgb(202, 202, 202);
+    border-radius: 50px;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 3rem;
+}
+
+.contact-x-logo{
+    width: 1.5rem;
+}
+
+@media screen and (max-width: 540px) {
+
+    .contact-gamail{
+        width: 70%;
+    }
+
+
+    .contact-x-a{
+        width: 70%;
+    }
+
+}
