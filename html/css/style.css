@@ -1014,7 +1014,7 @@ iframe {
 
   .about-member {
     left: 25%;
-    top: 89%;
+    top: 85%;
     border-radius: 50px;
     height: 2.5rem;
     width: 12rem;
@@ -1030,7 +1030,7 @@ iframe {
   width: 15%;
   height: 5%;
   left: 69%;
-  top: 88%;
+  top: 85%;
   }
 
   /* スペース */
@@ -1041,12 +1041,12 @@ iframe {
 
   /* video */
   .video {
-    margin-top: 10rem;
+    margin-top: 1rem;
   }
 
-  .video h3 {
+  /* .video h3 {
   padding-top: 10rem;
-  }
+  } */
 
   .video-btn1 {
     padding-top: 1rem;
