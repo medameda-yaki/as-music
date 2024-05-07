@@ -459,7 +459,7 @@ h1 {
 }
 
 .about-h2 {
-  font-size: 4rem;
+  font-size: 3rem;
   color: #e9f9ff;
   position: absolute;
   top: 28%;
@@ -996,7 +996,7 @@ iframe {
   }
 
   .about-h2 {
-    font-size: 3.5rem;
+    font-size: 2rem;
     left: 38.5%;
     top: 20%;
   }
