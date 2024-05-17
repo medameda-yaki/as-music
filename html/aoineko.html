@@ -6,36 +6,27 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>青猫と月夜の晩に</title>
     <link rel="stylesheet" href="css/style.css">
-    <link rel="stylesheet" href="css/slick.css">
-    <link rel="stylesheet" href="css/slick-theme.css">
+    <!-- <link rel="stylesheet" href="css/slick.css"> -->
+    <!-- <link rel="stylesheet" href="css/slick-theme.css"> -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Butterfly+Kids&family=Noto+Serif+JP&family=Yomogi&display=swap"
         rel="stylesheet">
 
-    <script src="js/jquery-3.7.1.min.js"></script>
+
+    <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.css">
+
+
+     <script src="js/jquery-3.7.1.min.js"></script>
     <script src="js/slick.js"></script>
     <script src="js/slick.min.js"></script>
-    <script src="js/slider.js"></script>
+    <script src="js/slider.js"></script>  
     <script src="js/main.js"></script>
 
-    <script>
+    
 
-        var slider = new Swiper('#slider', {
-            nextButton: '.swiper-button-next',
-            prevButton: '.swiper-button-prev'
-        })
-        var thumbs = new Swiper('#thumbs', {
-            centeredSlides: true,
-            spaceBetween: 10,
-            slidesPerView: "auto",
-            touchRatio: 0.2,
-            slideToClickedSlide: true
-        });
-        slider.params.control = thumbs;
-        thumbs.params.control = slider;
-
-    </script>
 
 
 </head>
@@ -56,7 +47,8 @@
                     <ul class="header-menu-ul">
                         <li class="header-menu-li"><a href="about.html" class="header-menu-a">ABOUT US</a></li>
 
-                        <li class="header-menu-li"><a href="https://www.youtube.com/@aoneko-tukiyo" class="header-menu-a" target="_blank">VIDEO</a></li>
+                        <li class="header-menu-li"><a href="https://www.youtube.com/@aoneko-tukiyo"
+                                class="header-menu-a" target="_blank">VIDEO</a></li>
                         <li class="header-menu-li"><a href="contact.html" class="header-menu-a">CONTACT</a></li>
 
                         <li class="header-menu-li"><a href="free.html" class="header-menu-a">フリー音源・オフボーカル音源</a></li>
@@ -64,17 +56,20 @@
                     </ul>
 
                     <ul class="header-sns-ul">
-                        <li class="header-sns-li"><a href="https://www.youtube.com/@aoneko-tukiyo" target="_blank" class="header-sns-a"><img
-                                    src="img/youtube-logo.png" alt="youtube" class="header-sns-img"></a></li>
+                        <li class="header-sns-li"><a href="https://www.youtube.com/@aoneko-tukiyo" target="_blank"
+                                class="header-sns-a"><img src="img/youtube-logo.png" alt="youtube"
+                                    class="header-sns-img"></a></li>
 
-                        <li class="header-sns-li"><a href="https://twitter.com/aoneko_tukiyo" target="_blank" class="header-sns-a"><img
-                                    src="img/X-logo.png" alt="X" class="header-sns-img"></a></li>
+                        <li class="header-sns-li"><a href="https://twitter.com/aoneko_tukiyo" target="_blank"
+                                class="header-sns-a"><img src="img/X-logo.png" alt="X" class="header-sns-img"></a></li>
 
-                        <li class="header-sns-li"><a href="https://www.tiktok.com/@aoneko_tuki" target="_blank" class="header-sns-a"><img
-                                    src="img/TikTok-logo.png" alt="tiktok" class="header-sns-img"></a></li>
+                        <li class="header-sns-li"><a href="https://www.tiktok.com/@aoneko_tuki" target="_blank"
+                                class="header-sns-a"><img src="img/TikTok-logo.png" alt="tiktok"
+                                    class="header-sns-img"></a></li>
 
-                        <li class="header-sns-li"><a href="https://www.instagram.com/aoneko_tuki/" target="_blank" class="header-sns-a"><img
-                                    src="img/instagram-logo.png" alt="instagram" class="header-sns-img"></a></li>
+                        <li class="header-sns-li"><a href="https://www.instagram.com/aoneko_tuki/" target="_blank"
+                                class="header-sns-a"><img src="img/instagram-logo.png" alt="instagram"
+                                    class="header-sns-img"></a></li>
                     </ul>
                 </div>
             </aside>
@@ -93,17 +88,20 @@
                 <li><a href="free.html">フリー音源・オフボーカル音源</a></li>
 
                 <li class="header-flex-sp">
-                    <div class="header-sns-li"><a href="https://www.youtube.com/@aoneko-tukiyo" target="_blank" class="header-sns-a"><img
-                                src="img/youtube-logo.png" alt="youtube" class="header-sns-img"></a></div>
+                    <div class="header-sns-li"><a href="https://www.youtube.com/@aoneko-tukiyo" target="_blank"
+                            class="header-sns-a"><img src="img/youtube-logo.png" alt="youtube"
+                                class="header-sns-img"></a></div>
 
-                    <div class="header-sns-li"><a href="https://twitter.com/aoneko_tukiyo" target="_blank" class="header-sns-a"><img src="img/X-logo.png"
-                                alt="X" class="header-sns-img"></a></div>
+                    <div class="header-sns-li"><a href="https://twitter.com/aoneko_tukiyo" target="_blank"
+                            class="header-sns-a"><img src="img/X-logo.png" alt="X" class="header-sns-img"></a></div>
 
-                    <div class="header-sns-li"><a href="https://www.tiktok.com/@aoneko_tuki" target="_blank" class="header-sns-a"><img
-                                src="img/TikTok-logo.png" alt="tiktok" class="header-sns-img"></a></div>
+                    <div class="header-sns-li"><a href="https://www.tiktok.com/@aoneko_tuki" target="_blank"
+                            class="header-sns-a"><img src="img/TikTok-logo.png" alt="tiktok" class="header-sns-img"></a>
+                    </div>
 
-                    <div class="header-sns-li"><a href="https://www.instagram.com/aoneko_tuki/" target="_blank" class="header-sns-a"><img
-                                src="img/instagram-logo.png" alt="instagram" class="header-sns-img"></a></div>
+                    <div class="header-sns-li"><a href="https://www.instagram.com/aoneko_tuki/" target="_blank"
+                            class="header-sns-a"><img src="img/instagram-logo.png" alt="instagram"
+                                class="header-sns-img"></a></div>
                 </li>
             </ul>
 
@@ -137,7 +135,7 @@
                         <div class="about inner">
                             <div class="about-text1">
                             </div>
-                            <h2 class="about-h2">愛されるがための音楽を</h2>
+                            <h2 class="about-h2">愛されたいがための音楽を</h2>
                             <div class="about-text2">
                             </div>
                             <a href="#about" class="about-a">
@@ -159,72 +157,17 @@
 
 
 
-                                <!-- <div class="sliderArea pc-only">
-                                <div class="full-screen_one slider">
-                                    <div><iframe width="560" height="315"
-                                            src="https://www.youtube.com/embed/EpFxTXgElLA?si=qd7lZVMr5mlONH9d"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe></div>
-                                    <div><iframe width="560" height="315"
-                                            src="https://www.youtube.com/embed/-VKIqrvVOpo?si=wPLWlnyI4WleKjU6"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe></div>
-                                    <div><iframe width="560" height="315"
-                                            src="https://www.youtube.com/embed/iT318d30d2c?si=WxSRWBFxylcQmVQh"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe></div>
-                                    <div><iframe width="560" height="315"
-                                            src="https://www.youtube.com/embed/9ypEFXTakV8?si=WRwAoJZqOu3hLxkx"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe></div>
-                                    <div><iframe width="560" height="315"
-                                            src="https://www.youtube.com/embed/JJaCwW4HyVs?si=NorVA9sex73x7SFe"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe></div>
-                                    <div><iframe width="560" height="315"
-                                            src="https://www.youtube.com/embed/4MoRLTAJY_0?si=-zNxDDbUxv1MqVnt"
-                                            title="YouTube video player" frameborder="0"
-                                            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                                            allowfullscreen></iframe></div>
+                                <div class="slide-wrapper">
+                                    <div class="slide">
+                                      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/kPD68KF-Kxk?si=9cNK1vzFXV2k7V6w" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/BPr_HeWhOUA?si=l-MoclbB0GD9IWB9" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                      <div class="slide-item"><iframe width="560" height="315" src="https://www.youtube.com/embed/dx-gdtLslXo?si=4JQYOya-cOypwXDz" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe></div>
+                                    </div>
+                                  </div>
 
-                                </div>
                                 <div class="inner video-btn1">
-                                    <a href="#" target="_blank" class="video-btn2">View More</a>
-                                    <div class="scrolldown1-video"><span></span></div>
-                                </div>
-    
-                            </div> -->
-
-
-
-                                <div class="slider-sp sp-only">
-                                    <div class="slider-img ">
-                                       <iframe width="560" height="315" src="https://www.youtube.com/embed/kPD68KF-Kxk?si=9cNK1vzFXV2k7V6w" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="slider-img">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/BPr_HeWhOUA?si=l-MoclbB0GD9IWB9" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="slider-img">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/dx-gdtLslXo?si=4JQYOya-cOypwXDz" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="slider-img">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/gpvc-K8FyMw?si=iYn7hNfyn7eR8nN2" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="slider-img">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/6t-cMaRH6yM?si=moxw_N5fKq8lTD1j" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-                                    <div class="slider-img">
-                                        <iframe width="560" height="315" src="https://www.youtube.com/embed/liZYQReSemE?si=fH1lSdQ6_UAqsZ5_" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" referrerpolicy="strict-origin-when-cross-origin" allowfullscreen></iframe>
-                                    </div>
-
-                                </div>
-                                <div class="inner video-btn1">
-                                    <a href="https://www.youtube.com/@aoneko-tukiyo" target="_blank" class="video-btn2">View More</a>
+                                    <a href="https://www.youtube.com/@aoneko-tukiyo" target="_blank"
+                                        class="video-btn2">View More</a>
                                     <div class="scrolldown1-video"><span></span></div>
                                 </div>
 
@@ -237,49 +180,49 @@
                         <div class="space"></div>
 
                         <!-- schedule -->
-                         <div class="news inner">
+                        <div class="news inner">
 
                             <h3 class="news-h3">SCHEDULE</h3>
 
                             <ul class="news-ul">
                                 <li class="news-li news-a">
-                                    <p class="news-date">毎週22：00(曜日不定)</p>
+                                    <p class="news-date">毎週21：00(曜日不定)</p>
                                     <span class="span-blue news-span">
                                         <p class="news-category">all</p>
                                     </span>
                                     <p class="news-detail">YouTubeにて雑談配信</p>
-                            </li>
-                            <li class="news-li news-a">
-                                
+                                </li>
+                                <li class="news-li news-a">
+
                                     <p class="news-date">2024/07/01～2024/07/07</p>
                                     <span class="span-blue news-span">
                                         <p class="news-category">all</p>
                                     </span>
                                     <p class="news-detail">ボカデュオ２曲参加</p>
-                            </li>
-                            <li class="news-li news-a">
-                                
+                                </li>
+                                <li class="news-li news-a">
+
                                     <p class="news-date">2024/09</p>
                                     <span class="span-green news-span">
                                         <p class="news-category">dim</p>
                                     </span>
                                     <p class="news-detail">ボカコレ参加</p>
-                            </li>
-                            <li class="news-li news-a">
-                                
+                                </li>
+                                <li class="news-li news-a">
+
                                     <p class="news-date">2024/11</p>
                                     <span class="span-yellow news-span">
                                         <p class="news-category">meda</p>
                                     </span>
                                     <p class="news-detail">歌コレ参加</p>
-                            </li>
+                                </li>
                             </ul>
-    
+
                             <div class="news-view">
                                 <a href="schedule.html" class="news-view-a">...View More</a>
                             </div>
 
-                        </div> 
+                        </div>
 
                     </div>
 
@@ -295,6 +238,10 @@
         </div>
     </div>
 
+    <script src="https://code.jquery.com/jquery-2.2.4.min.js"
+    integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44=" crossorigin="anonymous"></script>
+<script type="text/javascript"
+    src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"></script>
 </body>
 
 </html>
