@@ -15,23 +15,18 @@ $('.carousel[data-type="multi"] .item').each(function () {
   }
 });
 
-$(function () {
-  $(".slider-sp").slick({
-    arrows: false,
-    autoplay: true,
-    adaptiveHeight: true,
+$(function(){
+  $('.slide').slick({
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    autoplay: false,
     dots: true,
-    slidesToShow: 3,
-    responsive: [
-      {
-        breakpoint: 540, // 399px以下のサイズに適用
-        settings: {
-          slidesToShow: 1,
-          centerMode: true,
-          centerPadding: "0",
-  
-        },
-      },
-    ],
-  });
+    accessibility: true,
+    arrows: true,
+    swipe: true,
+    swipeToSlide: true
 });
+
+$('.slide').bind('touchstart', function () {
+    return true;
+});});
