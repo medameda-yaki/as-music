@@ -1023,7 +1023,7 @@ iframe {
 
   .about-h2 {
     font-size: 2rem;
-    left: 38.5%;
+    left: 44.8%;
     top: 20%;
   }
 
@@ -1072,6 +1072,7 @@ iframe {
 
   .slide-wrapper {
     width: 85%;
+    max-width: 90%;
   }
   
 
