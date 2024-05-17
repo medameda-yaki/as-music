@@ -583,9 +583,6 @@ iframe {
 
 /* video */
 
-.video {
-  margin-top: 27rem;
-}
 
 .video h3 {
   font-size: 2rem;
@@ -653,10 +650,39 @@ iframe {
   }
 }
 
-/* スペース */
-.space {
-  height: 28vh;
+/* 動画表示領域（表示サイズ）の設定 */
+.slide-wrapper {
+  width: 100%;
+  max-width: 560px;
+  margin: 0 auto
 }
+
+/* レスポンシブ対応 */
+.slide-item {
+  position: relative;
+  width: 100%;
+  padding-top: 56.25%;
+}
+
+.slide-item iframe {
+  position: absolute;
+  top:   0;
+  right: 0;
+  width: 100%;
+  height: 100%;
+}
+
+/* 背景が白の場合に表示できるように黒文字としている */
+/* .slick-next:before {
+  content: '→';
+  color: black;
+}
+
+.slick-prev:before {
+  content: '←';
+  color: black;
+}
+ */
 
 /* ニュース */
 .news {
@@ -1043,6 +1069,11 @@ iframe {
   .video {
     margin-top: 1rem;
   }
+
+  .slide-wrapper {
+    width: 85%;
+  }
+  
 
   /* .video h3 {
   padding-top: 10rem;
